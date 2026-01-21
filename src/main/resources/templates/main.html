@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordium</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        body {
+            background-color: #b3b3b3;
+            color: #413d3d;
+
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        .sub-sub-container1 {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: start;
+            align-items: center;
+            column-gap: 5vh;
+
+            flex-wrap: wrap;
+
+            list-style-type: none;
+
+            padding-left: 5vh;
+            padding-right: 5vh;
+
+            background-color: #ffffff;
+            font-size: 2.5rem;
+        }
+
+        .sub-sub-sub-container1 {
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+        }
+
+        a {
+            text-decoration-line: none;
+            color: #413d3d;
+        }
+
+        .my-page {
+            margin-left: auto;
+        }
+
+        .sub-container1 {
+            display: flex;
+            flex-direction: column;
+
+            margin: 5vh;
+        }
+
+        button {
+            background-color: #b3b3b3;
+            border: none;
+        }
+
+        .sub-sub-container2 {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .day {
+            font-size: 2.5rem;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5rem;
+
+            margin-top: 5vh;
+        }
+
+        .time {
+            font-size: 5rem;
+        }
+
+        .empty {
+            visibility: hidden;
+            width: 10vh;
+            height: 10vh;
+        }
+
+        .sub-container2 {
+            margin: 5vh;
+        }
+
+        .ai-message {
+            font-size: 2.5rem;
+        }
+
+        .subject-edit {
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+
+            font-size: 1.25rem;
+        }
+
+        .sub-sub-container3 div{
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+
+            font-size: 1.25rem;
+        }
+
+        .total-study {
+            margin-top: 1vh;
+        }
+
+        .support {
+            width: 10rem;
+            height: 4rem;
+
+            font-size: 1.25rem;
+
+            border: none;
+
+            color: #413d3d;
+            background-color: #d9d9d9;
+
+            margin-right: 5vh;
+        }
+
+        .sub-container3 {
+            display: flex;
+
+            justify-content: flex-end;
+        }
+
+        .pause-btn {
+            width: 10vh;
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <header class="container1">
+        <nav>
+            <ul class="sub-sub-container1">
+                <li><a class="home" href="#">홈</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">그룹스터디</a></li>
+                <li><a href="#">랭킹</a></li>
+                <li><a href="#">구독</a></li>
+                <li><a href="#">설정</a></li>
+                <li><a href="#">캘린더</a></li>
+                <li class="my-page"><a class="sub-sub-sub-container1" href="#">
+                    <img src="../static/img/human.png" alt="사람이미지">
+                    <span>마이페이지</span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container2">
+        <section class="sub-container1">
+            <p class="day">1월 8일 목</p>
+            <p class="title">현재 공부 시간</p>
+            <div class="sub-sub-container2">
+                <button class="empty" type="button">
+                    <img src="../static/img/pause.png">
+                </button>
+                <p class="time">00:27:44</p>
+                <button class="pause-btn" type="button">
+                    <img src="../static/img/pause.png" alt="정지 버튼">
+                </button>
+            </div>
+        </section>
+
+        <section class="sub-container2">
+            <p class="ai-message">AI 응원 메시지</p>
+            <button class="subject-edit" type="button">과목 편집</button>
+            <section class="sub-sub-container3">
+                <div>
+                    <span>컴퓨터 구조</span>
+                    <span>04:00:00</span>
+                </div>
+                <div>
+                    <span>컴퓨터 네트워크</span>
+                    <span>02:00:00</span>
+                </div>
+                <div>
+                    <span>데이터베이스 시스템</span>
+                    <span>00:50:00</span>
+                </div>
+                <div>
+                    <span>데이터베이스 시스템</span>
+                    <span>00:50:00</span>
+                </div>
+                <div>
+                    <span class="total-study">총 공부 시간</span>
+                    <span class="total-study">06:50:00</span>
+                </div>
+            </section>
+        </section>
+
+        <aside class="sub-container3">
+            <button class="support" type="button">후원하기</button>
+        </aside>
+    </main>
+</body>
+</html>

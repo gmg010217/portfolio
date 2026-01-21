@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordium</title>
+    <link rel="stylesheet" href="./static/css/reset.css">
+    <style>
+        body {
+            background-color: #b3b3b3;
+            color: #413d3d;
+
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 40vh;
+        }
+
+        .sub-container1 {
+                     display: flex;
+                     flex-direction: column;
+
+                     margin-top: 3vh;
+        }
+
+        .title {
+            font-size: 4rem;
+            color: #ffffff;
+        }
+
+        .sub-container1 button {
+            width: 20rem;
+            height: 5rem;
+
+            font-size: 1.25rem;
+
+            border: none;
+
+            color: #413d3d;
+            background-color: #d9d9d9;
+        }
+
+        .join {
+            margin-top: 1rem;
+        }
+
+        .logo {
+            margin-left: 2rem;
+            margin-top: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="container1">
+        <img class="logo" src="static/img/logo.png" alt="로고 이미지">
+    </header>
+
+    <main class="container2">
+        <h1 class="title">집중부터 기록까지 갓생의 시작</h1>
+
+        <section class="sub-container1">
+            <button class="login" type="button">로그인</button>
+            <button class="join" type="button">회원가입</button>
+        </section>
+    </main>
+</body>
+</html>
