@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordium</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        body {
+            background-color: #b3b3b3;
+            color: #413d3d;
+
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        .title {
+            font-size: 2.5rem;
+        }
+
+        .subject-img {
+            width: 4vh;
+            height: 4vh;
+        }
+
+        .pause-btn {
+            display: none;
+
+            width: 4rem;
+            height: 4rem;
+
+            margin-left: 2vh;
+        }
+
+        .replay-btn {
+            width: 4rem;
+            height: 4rem;
+
+            margin-left: 2vh;
+        }
+
+        .delete-btn {
+            display: none;
+
+            width: 4rem;
+            height: 4rem;
+
+            justify-self: flex-end;
+            align-self: center;
+
+            margin-right: 2vh;
+        }
+
+        .edit-btn {
+            width: 4rem;
+            height: 4rem;
+
+            justify-self: flex-end;
+            align-self: center;
+
+            margin-right: 2vh;
+        }
+
+        .container1 {
+            margin-top: 2.5vh;
+            margin-left: 3vh;
+        }
+
+        .sub-sub-container1 {
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+            font-size: 1.5rem;
+        }
+
+        .sub-container1 {
+            margin-top: 2vh;
+        }
+
+        button {
+            background-color: #b3b3b3;
+
+            border: none;
+        }
+
+        .container2 {
+            margin-top: 8vh;
+        }
+
+        .sub-container2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            margin-top: 2vh;
+        }
+
+        .total-study {
+            font-size: 2.5rem;
+        }
+
+        .total-time {
+            font-size: 2.5rem;
+        }
+
+        .sub-sub-container2 {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header class="container1">
+        <h1 class="title">과목 편집</h1>
+        <nav class="sub-container1">
+            <button class="sub-sub-container1" type="button">
+                <span>과목 추가</span>
+                <img class="subject-img" src="../static/img/add.png" alt="과목 추가 버튼">
+            </button>
+            <button class="sub-sub-container1" type="button">
+                <span>과목 수정</span>
+                <img class="subject-img" src="../static/img/edit.png" alt="과목 수정 버튼">
+            </button>
+            <button class="sub-sub-container1" type="button">
+                <span>과목 삭제</span>
+                <img class="subject-img" src="../static/img/delete.png" alt="과목 삭제 버튼">
+            </button>
+        </nav>
+    </header>
+
+    <main class="container2">
+        <section class="sub-container2">
+            <button class="delete-btn" type="button">
+                <img src="../static/img/delete.png" alt="삭제 버튼">
+            </button>
+            <button class="edit-btn" type="button">
+                <img src="../static/img/edit.png" alt="수정 버튼">
+            </button>
+            <span class="total-study">컴퓨터 구조</span>
+
+            <div class="sub-sub-container2">
+                <span class="total-time">04:00:00</span>
+                <button class="pause-btn" type="button">
+                    <img src="../static/img/pause.png" alt="정지 버튼">
+                </button>
+                <button class="replay-btn" type="button">
+                    <img src="../static/img/replay.png" alt="재생 버튼">
+                </button>
+            </div>
+        </section>
+
+        <section class="sub-container2">
+            <button class="delete-btn" type="button">
+                <img src="../static/img/delete.png" alt="삭제 버튼">
+            </button>
+            <button class="edit-btn" type="button">
+                <img src="../static/img/edit.png" alt="수정 버튼">
+            </button>
+            <span class="total-study">컴퓨터 네트워크</span>
+
+            <div class="sub-sub-container2">
+                <span class="total-time">02:00:00</span>
+                <button class="pause-btn" type="button">
+                    <img src="../static/img/pause.png" alt="정지 버튼">
+                </button>
+                <button class="replay-btn" type="button">
+                    <img src="../static/img/replay.png" alt="재생 버튼">
+                </button>
+            </div>
+        </section>
+
+        <section class="sub-container2">
+            <button class="delete-btn" type="button">
+                <img src="../static/img/delete.png" alt="삭제 버튼">
+            </button>
+            <button class="edit-btn" type="button">
+                <img src="../static/img/edit.png" alt="수정 버튼">
+            </button>
+            <span class="total-study">데이터베이스 시스템</span>
+
+            <div class="sub-sub-container2">
+                <span class="total-time">00:50:00</span>
+                <button class="pause-btn" type="button">
+                    <img src="../static/img/pause.png" alt="정지 버튼">
+                </button>
+                <button class="replay-btn" type="button">
+                    <img src="../static/img/replay.png" alt="재생 버튼">
+                </button>
+            </div>
+        </section>
+
+        <section class="sub-container2">
+            <span class="blank"></span>
+            <span class="total-study">총 공부 시간</span>
+            <span class="total-time">06:50:00</span>
+        </section>
+    </main>
+</body>
+</html>
