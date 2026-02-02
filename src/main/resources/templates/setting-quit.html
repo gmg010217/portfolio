@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordium</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        body {
+            background-color: #b3b3b3;
+            color: #413d3d;
+
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        .logo {
+            margin-left: 2rem;
+            margin-top: 1.25rem;
+        }
+
+        .title {
+            font-size: 4rem;
+            font-weight: 500;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 2.5vh;
+        }
+
+        .sub-container1 {
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+
+            margin-top: 20vh;
+        }
+
+        .password-input {
+            width: 40rem;
+            height: 4rem;
+
+            text-align: center;
+            font-size: 1.25rem;
+
+            background-color: #d9d9d9;
+            border: none;
+        }
+
+        .sub-sub-container1 {
+            margin-top: 3vh;
+
+            background-color: #b3b3b3;
+            font-size: 1.25rem;
+            text-align: center;
+
+            border: none;
+        }
+
+        .quit-btn {
+            width: 20rem;
+            height: 2.5rem;
+
+            margin-top: 3vh;
+
+            font-size: 1.25rem;
+            background-color: #d9d9d9;
+            border: none;
+
+            color: #f24822;
+        }
+
+        .quit-text {
+            margin-top: 1.5vh;
+
+            color: #f24822;
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../static/img/logo_black.png" alt="로고 이미지">
+    </header>
+
+    <main class="container2">
+        <h1 class="title">탈퇴</h1>
+        <form class="sub-container1">
+            <input class="password-input" type="password" placeholder="계정 소유자 확인용 비밀번호 입력">
+            <select class="sub-sub-container1">
+                <option>탈퇴 사유 선택</option>
+                <option>웹을 더 이상 사용하지 않음</option>
+                <option>기능 부족</option>
+                <option>기타</option>
+            </select>
+            <button class="quit-btn" type="submit">탈퇴하기</button>
+            <p class="quit-text">탈퇴 시 모든 기록이 삭제되며 복구할 수 없습니다.</p>
+        </form>
+    </main>
+</body>
+</html>
