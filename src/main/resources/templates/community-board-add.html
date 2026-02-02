@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordium</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        body {
+            background-color: #b3b3b3;
+            color: #413d3d;
+
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        .container1 {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+
+        .sub-container1 {
+            background-color: #d9d9d9;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 1vh 3vh 1vh 3vh;
+        }
+
+        .file-btn {
+            background-color: #d9d9d9;
+            color: #413d3d;
+            border: none;
+
+            text-align: end;
+
+            width: 10rem;
+
+            margin-top: 0.25vh;
+            margin-left: auto;
+        }
+
+        .title-textarea {
+            background-color: #d9d9d9;
+            color: #413d3d;
+            border: none;
+        }
+
+        .container2 {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+
+        hr {
+            background: #000000;
+
+            height: 0.075em;
+            border: none;
+        }
+
+        .sub-container2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content-textarea {
+            background-color: #b3b3b3;
+
+            flex-grow: 1;
+
+            margin: 1vh 3vh 1vh 3vh;
+        }
+
+        .sub-container2 {
+            background-color: #d9d9d9;
+        }
+
+        .sub-sub-container1 {
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        .cancel-btn {
+            background-color: #ffffff;
+            border: none;
+
+            font-size: 1.5rem;
+
+            padding: 0.5vh 1.5vh;
+
+            margin-left: auto;
+            margin-right: 1vh;
+        }
+
+        .write-btn {
+            background-color: #ffffff;
+            border: none;
+
+            font-size: 1.5rem;
+            padding: 0.5vh 1.5vh;
+
+            margin-right: 3vh;
+        }
+    </style>
+</head>
+<body>
+    <header class="container1">
+        <div></div>
+        <div class="sub-container1">
+            <textarea class="title-textarea" placeholder="제목을 입력하세요."></textarea>
+            <button class="file-btn" type="button">첨부 파일 추가하기</button>
+        </div>
+        <div></div>
+    </header>
+
+    <main class="container2">
+        <aside>
+
+        </aside>
+
+        <section class="sub-container2">
+            <hr>
+            <textarea class="content-textarea" placeholder="내용을 입력하세요."></textarea>
+            <hr>
+
+            <div class="sub-sub-container1">
+                <button class="cancel-btn" type="submit">작성 취소</button>
+                <button class="write-btn" type="button">작성 하기</button>
+            </div>
+        </section>
+
+        <aside>
+
+        </aside>
+    </main>
+</body>
+</html>
