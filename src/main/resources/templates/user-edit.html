@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordium</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        body {
+            background-color: #b3b3b3;
+            color: #413d3d;
+
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            margin-top: 2.5vh;
+        }
+
+        .sub-container1 {
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+
+            margin-top: 10vh;
+        }
+
+        .title {
+            font-size: 4rem;
+            font-weight: 500;
+        }
+
+        .logo {
+            margin-left: 2rem;
+            margin-top: 1.25rem;
+        }
+
+        input {
+            width: 35rem;
+            height: 5rem;
+
+            background-color: #b3b3b3;
+            border: none;
+
+            text-align: center;
+        }
+
+        hr {
+            background: #000000;
+
+            width: 50vh;
+            height: 0.075em;
+            border: none;
+
+            margin-bottom: 5vh;
+        }
+
+        .member-type {
+            margin-bottom: 2.5vh;
+            background-color: #b3b3b3;
+            border: none;
+
+            font-size: 1.25rem;;
+
+            color: #413d3d;
+        }
+
+        button {
+            width: 20rem;
+            height: 2.5rem;
+
+            font-size: 1.25rem;
+
+            border: none;
+
+            color: #413d3d;
+            background-color: #d9d9d9;
+        }
+
+        .cancel-btn {
+            margin-top: 1vh;
+        }
+    </style>
+</head>
+<body>
+    <header class="container1">
+        <img class="logo" src="../static/img/logo_black.png" alt="로고 이미지">
+    </header>
+
+    <main class="container2">
+        <h1 class="title">회원 정보 수정</h1>
+
+        <form class="sub-container1">
+            <input class="nickname" type="text" placeholder="청강">
+            <hr class="one-hr">
+            <input class="age" type="text" placeholder="26">
+            <hr class="two-hr">
+            <select class="member-type">
+                <option>직장인</option>
+                <option>회원유형</option>
+                <option>초등학생</option>
+                <option>중학생</option>
+                <option>고등학생</option>
+                <option>대학생</option>
+            </select>
+            <input class="password" type="password" placeholder="현재 비밀번호 입력">
+            <hr class="two-hr">
+            <button class="save-btn" type="submit">저장</button>
+            <button class="cancel-btn" type="submit">취소</button>
+        </form>
+    </main>
+</body>
+</html>
