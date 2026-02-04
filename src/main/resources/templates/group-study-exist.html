@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordium</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        body {
+            background-color: #b3b3b3;
+            color: #413d3d;
+
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 400;
+
+            text-align: center;
+
+            margin-top: 1vh;
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .group-add {
+            width: 5rem;
+            height: 5rem;
+
+            background-color: #b3b3b3;
+            border: none;
+
+            align-self: flex-end;
+
+            position: fixed;
+            bottom: 1vh;
+            right: 1vh;
+        }
+
+        a {
+            font-size: 3rem;
+            font-weight: 450;
+
+            color: #413d3d;
+            text-decoration: none;
+        }
+
+        .sub-container1 {
+            margin-top: 1vh;
+            margin-left: 3vh;
+        }
+
+        .sub-sub-container1 {
+            display: flex;
+        }
+
+        .username {
+            margin-left: 3vh;
+        }
+
+        .sub-sub-container1 > p {
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="title">가입한 그룹</h1>
+    </header>
+
+    <main>
+        <section class="container1">
+            <article class="sub-container1">
+                <h3>
+                    <a href="#">그룹 1 제목</a>
+                </h3>
+                <div class="sub-sub-container1">
+                    <p>15/20명</p>
+                    <p class="username">사용자1</p>
+                </div>
+            </article>
+
+            <article class="sub-container1">
+                <h3>
+                    <a href="#">그룹 2 제목</a>
+                </h3>
+                <div class="sub-sub-container1">
+                    <p>17/20명</p>
+                    <p class="username">사용자2</p>
+                </div>
+            </article>
+
+            <button class="group-add" type="button">
+                <img src="../static/img/add.png" alt="그룹 추가 버튼">
+            </button>
+        </section>
+    </main>
+</body>
+</html>

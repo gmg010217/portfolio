@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordium</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        body {
+            background-color: #b3b3b3;
+            color: #413d3d;
+
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 400;
+
+            text-align: center;
+
+            margin-top: 1vh;
+        }
+
+        .group-add {
+            border: none;
+            background-color: #b3b3b3;
+
+            color: #413d3d;
+
+            margin-left: auto;
+            margin-right: 6vh;
+
+            font-size: 1.25rem;
+        }
+
+        .sub-container1 {
+            display: flex;
+            flex-direction: column;
+
+            row-gap: 1vh;
+
+            margin-top: 1vh;
+            margin-left: 6vh;
+            margin-right: 6vh;
+
+            text-align: center;
+        }
+
+        .sub-sub-container1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .sub-sub-container2 {
+            display: grid;
+            grid-template-columns: 1fr auto;
+        }
+
+        .group-title {
+            margin-left: 9vh;
+        }
+
+        .join {
+            border: none;
+            background-color: #d9d9d9;
+
+            margin-right: 2vh;
+
+            color: #413d3d;
+        }
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        .sub-sub-container1, .sub-sub-container2 {
+            font-size: 1.25rem;
+        }
+
+        .group-leader {
+            margin-right: 4vh;
+        }
+
+        .sub-sub-container3 {
+            background-color: #d9d9d9;
+
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+        }
+    </style>
+</head>
+<body>
+    <header class="container1">
+        <h1 class="title">스터디 그룹</h1>
+        <button class="group-add" type="button">그룹 추가하기</button>
+    </header>
+
+    <main>
+        <section class="sub-container1">
+            <article class="sub-sub-container3">
+                <h3>그룹 1 제목</h3>
+                <div class="sub-sub-container1">
+                    <p class="group-leader">그룹장 | 사용자1</p>
+                    <p>인원 15/20명</p>
+                </div>
+                <div class="sub-sub-container2">
+                    <p class="group-title">포기하지 말고 꾸준히</p>
+                    <button class="join" type="button">가입하기</button>
+                </div>
+            </article>
+
+            <article class="sub-sub-container3">
+                <h3>그룹 2 제목</h3>
+                <div class="sub-sub-container1">
+                    <p class="group-leader">그룹장 | 사용자2</p>
+                    <p>인원 15/20명</p>
+                </div>
+                <div class="sub-sub-container2">
+                    <p class="group-title">노력은 배신하지 않는다</p>
+                    <button class="join" type="button">가입하기</button>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
