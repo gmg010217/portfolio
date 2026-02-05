@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordium</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        body {
+            background-color: #b3b3b3;
+            color: #413d3d;
+
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        .title {
+            font-size: 4rem;
+            font-weight: 500;
+        }
+
+        .sub-container1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            font-size: 1.25rem;
+
+            margin-top: 2.5vh;
+        }
+
+        .logo {
+            margin-left: 2rem;
+            margin-top: 1.25rem;
+        }
+
+        .comment {
+            margin-top: 2.5vh;
+        }
+
+        .sub-sub-container1 {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            margin-top: 2.5vh;
+        }
+
+        .sub-sub-container1 > button {
+            width: 70vh;
+            height: 10vh;
+
+            font-size: 2rem;
+
+            background-color: #d9d9d9;
+            color: #413d3d;
+
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../static/img/logo_black.png" alt="로고 이미지">
+    </header>
+
+    <main>
+        <section class="sub-container1">
+            <h1 class="title">결제 수단 변경</h1>
+            <p class="comment">다음 결제 주기부터 적용됩니다.</p>
+            <nav class="sub-sub-container1">
+                <button type="button">카카오 페이</button>
+                <button type="button">토스 페이</button>
+                <button type="button">네이버 페이</button>
+            </nav>
+        </section>
+    </main>
+</body>
+</html>

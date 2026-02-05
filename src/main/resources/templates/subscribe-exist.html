@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordium</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        body {
+            background-color: #b3b3b3;
+            color: #413d3d;
+
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        .title {
+            font-size: 4rem;
+            font-weight: 500;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            font-size: 1.25rem;
+
+            margin-top: 2.5vh;
+        }
+
+        .subscribe {
+            width: 25rem;
+            height: 3rem;
+
+            border: none;
+
+            margin-top: 17.5vh;
+
+            color: #413d3d;
+            background-color: #d9d9d9;
+        }
+
+        .sub-container1 {
+            margin-top: 5vh;
+
+            padding: 1vh 3vh 1vh 3vh;
+
+            width: 100vh;
+            height: 12.5vh;
+
+            background-color: #d9d9d9;
+        }
+
+        .sub-sub-container1 {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-between;
+        }
+
+        .logo {
+            margin-left: 2rem;
+            margin-top: 1.25rem;
+        }
+
+        .sub-sub-container2 {
+            margin-top: 2vh;
+            margin-left: 2vh;
+        }
+
+        .sub-container2 {
+            display: flex;
+            flex-direction: column;
+
+            margin-top: 5vh;
+
+            padding: 1vh 3vh 1vh 3vh;
+
+            width: 100vh;
+            height: 12.5vh;
+
+            background-color: #d9d9d9;
+        }
+
+        .pay-method {
+            border: none;
+            height: 5vh;
+
+            margin-top: 1vh;
+
+            color: #413d3d;
+            background-color: #d9d9d9;
+
+            justify-self: center;
+        }
+
+        .subscribe {
+            color: #f24822;
+        }
+    </style>
+</head>
+<body>
+    <header class="container1">
+        <img class="logo" src="../static/img/logo_black.png" alt="로고 이미지">
+    </header>
+
+    <main class="container2">
+        <h1 class="title">구독</h1>
+
+        <p>구독 상세 정보</p>
+        <article class="sub-container1">
+            <div class="sub-sub-container1">
+                <p>구독 시작일: 2026년 2월 4일</p>
+                <p>1000₩</p>
+            </div>
+
+            <div class="sub-sub-container2">
+                <p>광고 제거 프리미엄</p>
+                <p>다음 결제일 : 2026년 3월 4일</p>
+            </div>
+        </article>
+
+        <article class="sub-container2">
+            <p>결제 정보</p>
+            <button class="pay-method" type="button">결제 수단 관리</button>
+        </article>
+
+        <button class="subscribe" type="button">구독해지</button>
+    </main>
+</body>
+</html>
