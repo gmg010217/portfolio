@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recordium</title>
+    <link rel="stylesheet" href="../static/css/reset.css">
+    <style>
+        body {
+            background-color: #b3b3b3;
+            color: #413d3d;
+
+            display: grid;
+            grid-template-rows: auto 1fr;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+
+            margin: 1vh 3vh 1vh 3vh;
+        }
+
+        .sub-container1 {
+            display: flex;
+            align-items: flex-end;
+
+            gap: 2vh;
+
+            font-size: 2rem;
+        }
+
+        .sub-container1 > button {
+            border: none;
+            background: #b3b3b3;
+            color: #413d3d;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 400;
+        }
+
+        .sub-sub-container1 {
+            display: flex;
+            justify-content: center;
+
+            column-gap: 2vh;
+        }
+
+        .sub-container2 {
+            background-color: #d9d9d9;
+            font-size: 2rem;
+
+            padding-top: 2.5vh;
+
+            margin: 1vh 3vh 1vh 3vh;
+        }
+
+        .next-btn, .pre-btn {
+            border: none;
+            background: #d9d9d9;
+            color: #413d3d;
+        }
+
+        .sub-sub-container2 {
+            margin: 1vh 3vh 1vh 3vh;
+            border: 0.25vh solid #b3b3b3;
+
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        .day {
+            background-color: #b3b3b3;
+            text-align: center;
+        }
+
+        .day-cell {
+            padding: 3vh 3vh 1vh 3vh;
+
+            text-align: center;
+
+            height: 10vh;
+        }
+
+        .sub-sub-container2 > div {
+            border: 0.125vh solid #b3b3b3;
+        }
+
+        .empty {
+            height: 3vh;
+        }
+
+        .sub-container3 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sub-sub-container3 {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+
+            font-size: 2rem;
+        }
+
+        .sub-sub-sub-container1 {
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+
+            width: 15rem;
+        }
+
+        .progress-bar {
+            width: 30rem;
+            height: 5rem;
+
+            background: #d9d9d9;
+        }
+
+        .sub-sub-container4 {
+            display: flex;
+            flex-direction: column;
+
+            row-gap: 1vh;
+
+            margin: 1vh 3vh 1vh 3vh;
+        }
+
+        .sub-sub-sub-container2 {
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+        }
+
+        .progress1 {
+            height: 100%;
+            width: 50%;
+            background: #004fff;
+        }
+
+        .progress2 {
+            height: 100%;
+            width: 30%;
+            background-color: #FF0f00;
+        }
+
+        .sub-sub-sub-sub-container1 {
+            display: flex;
+            flex-direction: column;
+
+            font-size: 1.75rem;
+
+            margin-left: 3vh;
+        }
+
+        .sub-sub-sub-sub-sub-container1 {
+            display: flex;
+            flex-direction: row;
+
+            column-gap: 3vh;
+        }
+    </style>
+</head>
+<body>
+<header class="container1">
+    <h1>공부 시간 통계</h1>
+    <nav class="sub-container1">
+        <p>기간 |</p>
+        <button type="button">일</button>
+        <button type="button">주</button>
+        <button type="button">월</button>
+    </nav>
+</header>
+
+<main>
+    <section class="sub-container2">
+        <header class="sub-sub-container1">
+            <button class="next-btn" type="button"><</button>
+            <p>2026년</p>
+            <button class="pre-btn" type="button">></button>
+        </header>
+
+        <div class="sub-sub-container2">
+            <p class="day">1월</p>
+            <p class="day">2월</p>
+            <p class="day">3월</p>
+            <p class="day">4월</p>
+            <p class="day">5월</p>
+            <p class="day">6월</p>
+            <div class="day-cell">
+                <p>2h 30m</p>
+            </div>
+            <div class="day-cell">
+                <p>1h 10m</p>
+            </div>
+            <div class="day-cell">
+                <p>0h 0m</p>
+            </div>
+            <div class="day-cell">
+                <p>45m</p>
+            </div>
+            <div class="day-cell">
+                <p>1h 20m</p>
+            </div>
+            <div class="day-cell">
+                <p>0h 0m</p>
+            </div>
+
+            <p class="day">7월</p>
+            <p class="day">8월</p>
+            <p class="day">9월</p>
+            <p class="day">10월</p>
+            <p class="day">11월</p>
+            <p class="day">12월</p>
+            <div class="day-cell">
+                <p>2h 30m</p>
+            </div>
+            <div class="day-cell">
+                <p>1h 10m</p>
+            </div>
+            <div class="day-cell">
+                <p>0h 0m</p>
+            </div>
+            <div class="day-cell">
+                <p>45m</p>
+            </div>
+            <div class="day-cell">
+                <p>1h 20m</p>
+            </div>
+            <div class="day-cell">
+                <p>0h 0m</p>
+            </div>
+        </div>
+        <div class="empty"></div>
+    </section>
+
+    <section class="sub-container3">
+        <div class="sub-sub-container3">
+            <div class="sub-sub-sub-container1">
+                <p>총 시간</p>
+                <p>08:40:00</p>
+            </div>
+
+            <div class="sub-sub-sub-container1">
+                <p>하루 평균</p>
+                <p>08:40:00</p>
+            </div>
+        </div>
+
+        <div class="sub-sub-container4">
+            <div class="sub-sub-sub-container2">
+                <div class="progress-bar">
+                    <div class="progress1"></div>
+                </div>
+                <div class="sub-sub-sub-sub-container1">
+                    <p>컴퓨터 네트워크</p>
+                    <div class="sub-sub-sub-sub-sub-container1">
+                        <p>10:40:00</p>
+                        <p>40%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-sub-sub-container2">
+                <div class="progress-bar">
+                    <div class="progress2"></div>
+                </div>
+                <div class="sub-sub-sub-sub-container1">
+                    <p>컴퓨터 구조</p>
+                    <div class="sub-sub-sub-sub-sub-container1">
+                        <p>04:00:00</p>
+                        <p>20%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
