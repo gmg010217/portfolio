@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recordium</title>
-    <link rel="stylesheet" href="../static/css/base/reset.css">
+    <link rel="stylesheet" href="../../static/css/base/reset.css">
     <style>
         body {
             background-color: #b3b3b3;
@@ -72,26 +72,26 @@
             border: none;
 
             color: #413d3d;
-            background-color: #d9d9d9;
+        }
+
+        .code-resend {
+            margin-top: 1rem;
         }
     </style>
 </head>
 <body>
     <header class="container1">
-        <img class="logo" src="../static/img/logo_black.png" alt="로고 이미지">
+        <img class="logo" src="../../static/img/logo_black.png" alt="로고 이미지">
     </header>
 
     <main class="container2">
         <h1 class="title">이메일 회원가입</h1>
 
         <form class="sub-container1">
-            <input class="id" placeholder="이메일 아이디">
-            <hr>
-            <input class="password" type="password" placeholder="비밀번호">
-            <hr>
-            <input class="password-check" type="password" placeholder="비밀번호 확인">
-            <hr>
-            <button class="code-send" type="submit">인증코드 전송</button>
+            <input class="code-input" placeholder="인증코드 입력">
+            <hr class="one-hr">
+            <button class="check" type="submit">확인</button>
+            <button class="code-resend" type="submit">재전송</button>
         </form>
     </main>
 </body>

@@ -1,22 +1,25 @@
-.intro-title {
+.intro-title, .start-title {
     font-size: 4rem;
+}
+
+.intro-title {
     color: #ffffff;
 }
 
-.intro-buttons {
+.intro-buttons, .start-buttons {
     display: flex;
     flex-direction: column;
 
-    margin-top: 3vh;
+    margin-top: 5vh;
 }
 
-.login-button, .join-button {
+.login-button, .join-button, .google-button, .email-button {
     width: 20rem;
     height: 5rem;
 
     font-size: 1.25rem;
 }
 
-.join-button {
+.join-button, .email-button {
     margin-top: 1vh;
 }

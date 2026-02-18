@@ -4,70 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recordium</title>
-    <link rel="stylesheet" href="../../static/css/base/reset.css">
-    <style>
-        body {
-            background-color: #b3b3b3;
-            color: #413d3d;
-
-            display: grid;
-            grid-template-rows: auto 1fr;
-        }
-
-        .container2 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            margin-top: 2.5vh;
-        }
-
-        .sub-container1 {
-            display: flex;
-            flex-direction: column;
-
-            margin-top: 30vh;
-        }
-
-        .title {
-            font-size: 4rem;
-            font-weight: 500;
-        }
-
-        .sub-container1 button {
-            width: 20rem;
-            height: 5rem;
-
-            font-size: 1.25rem;
-
-            border: none;
-
-            color: #413d3d;
-            background-color: #d9d9d9;
-        }
-
-        .email {
-            margin-top: 1rem;
-        }
-
-        .logo {
-            margin-left: 2rem;
-            margin-top: 1.25rem;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/base/reset.css">
+    <link rel="stylesheet" href="/css/base/base.css">
+    <link rel="stylesheet" href="/css/layout/start.css">
+    <link rel="stylesheet" href="/css/module/start.css">
+    <link rel="stylesheet" href="/css/module/form.css">
 </head>
 <body>
-<header class="container1">
-    <img class="logo" src="../../static/img/logo_black.png" alt="로고 이미지">
-</header>
+    <header>
+        <img class="logo" src="/img/logo_black.png" alt="로고 이미지">
+    </header>
 
-<main class="container2">
-    <h1 class="title">로그인</h1>
+    <main class="l-main">
+        <h1 class="start-title">로그인</h1>
 
-    <section class="sub-container1">
-        <button class="google" type="button">구글</button>
-        <button class="email" type="button">이메일</button>
-    </section>
-</main>
+        <section class="start-buttons">
+            <button class="btn google-button" type="button">구글</button>
+            <button class="btn email-button" type="button" onclick="location.href='/login/email'">이메일</button>
+        </section>
+    </main>
 </body>
 </html>
