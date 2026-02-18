@@ -1,0 +1,22 @@
+.intro-title {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.intro-buttons {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 3vh;
+}
+
+.login-button, .join-button {
+    width: 20rem;
+    height: 5rem;
+
+    font-size: 1.25rem;
+}
+
+.join-button {
+    margin-top: 1vh;
+}
