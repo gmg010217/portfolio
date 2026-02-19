@@ -1,4 +1,4 @@
-.intro-title, .start-title {
+.intro-title, .start-title, .email-title {
     font-size: 4rem;
 }
 
@@ -6,11 +6,19 @@
     color: #ffffff;
 }
 
-.intro-buttons, .start-buttons {
+.start-title, .email-title {
+    font-weight: 400;
+}
+
+.intro-buttons, .start-buttons, .start-form {
     display: flex;
     flex-direction: column;
 
     margin-top: 5vh;
+}
+
+.start-form {
+    align-items: center;
 }
 
 .login-button, .join-button, .google-button, .email-button {
@@ -20,6 +28,30 @@
     font-size: 1.25rem;
 }
 
+.small-button {
+    width: 20rem;
+    height: 2.5rem;
+
+    font-size: 1.25rem;
+}
+
 .join-button, .email-button {
     margin-top: 1vh;
+}
+
+.start-input-text {
+    width: 35rem;
+    height: 5rem;
+
+    border: none;
+
+    background-color: #b3b3b3;
+}
+
+.large-gap {
+    margin-bottom: 5vh;
+}
+
+.small-gap {
+    margin-bottom: 2.5vh;
 }

@@ -4,69 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recordium</title>
-    <link rel="stylesheet" href="../../static/css/base/reset.css">
+    <link rel="stylesheet" href="/css/base/reset.css">
+    <link rel="stylesheet" href="/css/base/base.css">
+    <link rel="stylesheet" href="/css/layout/start.css">
+    <link rel="stylesheet" href="/css/module/start.css">
+    <link rel="stylesheet" href="/css/module/form.css">
     <style>
-        body {
-            background-color: #b3b3b3;
-            color: #413d3d;
-
-            display: grid;
-            grid-template-rows: auto 1fr;
-        }
-
-        .container2 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            margin-top: 2.5vh;
-        }
-
-        .sub-container1 {
-            display: flex;
-            flex-direction: column;
-
-            align-items: center;
-
-            margin-top: 10vh;
-        }
-
-        .title {
-            font-size: 4rem;
-            font-weight: 500;
-        }
-
-        .logo {
-            margin-left: 2rem;
-            margin-top: 1.25rem;
-        }
-
-        .id, .password {
-            width: 35rem;
-            height: 5rem;
-
-            background-color: #b3b3b3;
-            border: none;
-        }
-
         hr {
-            background: #000000;
-
-            width: 50vh;
-            height: 0.075em;
-            border: none;
+            width: 35rem;
         }
 
         input::placeholder {
             text-align: center;
-        }
-
-        .one-hr {
-            margin-bottom: 5vh;
-        }
-
-        .two-hr {
-            margin-bottom: 2.5vh;
         }
 
         button {
@@ -79,13 +28,6 @@
 
             color: #413d3d;
             background-color: #d9d9d9;
-        }
-
-        a {
-            text-decoration-line: none;
-            color: #413d3d;
-
-            margin-bottom: 2.5vh;
         }
 
         .sub-sub-container1 {
@@ -102,20 +44,22 @@
     </style>
 </head>
 <body>
-    <header class="container1">
-        <img class="logo" src="../../static/img/logo_black.png" alt="로고 이미지">
+    <header>
+        <img class="logo" src="/img/logo_black.png" alt="로고 이미지">
     </header>
 
-    <main class="container2">
-        <h1 class="title">이메일 로그인</h1>
+    <main class="l-main">
+        <h1 class="email-title">이메일 로그인</h1>
 
-        <form class="sub-container1">
-            <input class="id" placeholder="아이디">
-            <hr class="one-hr">
-            <input class="password" type="password" placeholder="비밀번호">
-            <hr class="two-hr">
-            <a href="#" class="password-find">비밀번호를 잊으셨나요?</a>
-            <button class="login" type="submit">로그인</button>
+        <form class="start-form">
+            <input class="start-input-text" type="text" placeholder="아이디">
+            <hr class="large-gap">
+
+            <input class="start-input-text" type="password" placeholder="비밀번호">
+            <hr class="small-gap">
+
+            <a class="small-gap" href="#">비밀번호를 잊으셨나요?</a>
+            <button class="small-button btn" type="submit">로그인</button>
             <div class="sub-sub-container1">
                 <input class="login-save" type="checkbox" id="save">
                 <label for="save">로그인 정보 저장</label>

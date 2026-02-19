@@ -5,3 +5,15 @@ body {
     display: grid;
     grid-template-rows: auto 1fr;
 }
+
+hr {
+    height: 0.075rem;
+
+    background: #1e1e1e;
+    border: none;
+}
+
+a {
+    text-decoration-line: none;
+    color: #413d3d;
+}
