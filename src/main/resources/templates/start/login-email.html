@@ -9,39 +9,7 @@
     <link rel="stylesheet" href="/css/layout/start.css">
     <link rel="stylesheet" href="/css/module/start.css">
     <link rel="stylesheet" href="/css/module/form.css">
-    <style>
-        hr {
-            width: 35rem;
-        }
-
-        input::placeholder {
-            text-align: center;
-        }
-
-        button {
-            width: 20rem;
-            height: 2.5rem;
-
-            font-size: 1.25rem;
-
-            border: none;
-
-            color: #413d3d;
-            background-color: #d9d9d9;
-        }
-
-        .sub-sub-container1 {
-            display: flex;
-            flex-direction: row;
-
-            margin-top: 2.5vh;
-        }
-
-        input[type=checkbox] {
-            zoom: 1.75;
-            accent-color: #b3b3b3;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/util/util.css">
 </head>
 <body>
     <header>
@@ -49,19 +17,19 @@
     </header>
 
     <main class="l-main">
-        <h1 class="email-title">이메일 로그인</h1>
+        <h1 class="title title-slim">이메일 로그인</h1>
 
-        <form class="start-form">
-            <input class="start-input-text" type="text" placeholder="아이디">
-            <hr class="large-gap">
+        <form class="form u-mt-5">
+            <input class="input-text" type="text" placeholder="아이디">
+            <hr class="hr-width u-mb-5">
 
-            <input class="start-input-text" type="password" placeholder="비밀번호">
-            <hr class="small-gap">
+            <input class="input-text" type="password" placeholder="비밀번호">
+            <hr class="hr-width u-mb-2dot5">
 
-            <a class="small-gap" href="#">비밀번호를 잊으셨나요?</a>
-            <button class="small-button btn" type="submit">로그인</button>
-            <div class="sub-sub-container1">
-                <input class="login-save" type="checkbox" id="save">
+            <a class="u-mb-2dot5" href="#">비밀번호를 잊으셨나요?</a>
+            <button class="button button-small" type="submit">로그인</button>
+            <div class="checkbox-container">
+                <input class="checkbox" type="checkbox" id="save">
                 <label for="save">로그인 정보 저장</label>
             </div>
         </form>
