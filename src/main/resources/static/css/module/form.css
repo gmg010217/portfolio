@@ -26,8 +26,11 @@
     width: 35rem;
     height: 5rem;
 
+    text-align: center;
+
     border: none;
 
+    color: #413d3d;
     background-color: #b3b3b3;
 }
 
@@ -35,14 +38,21 @@
     text-align: center;
 }
 
-.checkbox-container {
+.checkbox-group {
     display: flex;
     flex-direction: row;
-
-    margin-top: 2.5vh;
 }
 
 .checkbox {
     zoom: 1.75;
     accent-color: #b3b3b3;
+}
+
+.selectbox {
+    font-size: 1.25rem;
+
+    border: none;
+
+    color: #413d3d;
+    background-color: #b3b3b3;
 }

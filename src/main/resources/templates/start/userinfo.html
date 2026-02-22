@@ -10,16 +10,6 @@
     <link rel="stylesheet" href="/css/module/start.css">
     <link rel="stylesheet" href="/css/module/form.css">
     <link rel="stylesheet" href="/css/util/util.css">
-    <style>
-        .sub-container1 {
-            display: flex;
-            flex-direction: column;
-
-            align-items: center;
-
-            margin-top: 10vh;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -27,16 +17,18 @@
     </header>
 
     <main class="l-main">
-        <h1 class="title title-slim">이메일 회원가입</h1>
+        <h1 class="title title-slim">사용자 정보 입력</h1>
 
-        <form class="form u-mt-5" action method="post" th:object="${emailCodeDto}">
-            <input class="input-text" type="text" placeholder="인증코드 입력" th:field="*{emailCode}">
+        <form class="form u-mt-5" action method="post" th:object="${userInfoDto}">
+            <input class="input-text" type="text" placeholder="닉네임" th:field="*{username}">
             <hr class="hr-width u-mb-5">
+            <input class="input-text" type="text" placeholder="연령" th:field="*{age}">
+            <hr class="hr-width u-mb-2dot5">
+            <select class="selectbox u-mb-2dot5" th:field="*{memberType}">
+                <option value="">회원유형</option>
+                <option th:each="memberType : ${memberTypes}" th:value="${memberType.name()}" th:text="${memberType.description}">초등학생</option>
+            </select>
             <button class="button button-small" type="submit">확인</button>
-        </form>
-
-        <form class="form u-mt-1" action method="get">
-            <button class="button button-small" type="submit">재전송</button>
         </form>
     </main>
 </body>

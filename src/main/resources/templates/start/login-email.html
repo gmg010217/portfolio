@@ -19,18 +19,18 @@
     <main class="l-main">
         <h1 class="title title-slim">이메일 로그인</h1>
 
-        <form class="form u-mt-5">
-            <input class="input-text" type="text" placeholder="아이디">
+        <form class="form u-mt-5" action method="post" th:object="${emailLoginDto}">
+            <input class="input-text" type="text" placeholder="아이디" th:field="*{emailId}">
             <hr class="hr-width u-mb-5">
 
-            <input class="input-text" type="password" placeholder="비밀번호">
+            <input class="input-text" type="password" placeholder="비밀번호" th:field="*{password}">
             <hr class="hr-width u-mb-2dot5">
 
-            <a class="u-mb-2dot5" href="#">비밀번호를 잊으셨나요?</a>
-            <button class="button button-small" type="submit">로그인</button>
-            <div class="checkbox-container">
-                <input class="checkbox" type="checkbox" id="save">
-                <label for="save">로그인 정보 저장</label>
+            <a class="u-mb-2dot5" href="/login/password/forget">비밀번호를 잊으셨나요?</a>
+            <button class="button button-small u-mb-2dot5" type="submit">로그인</button>
+            <div class="checkbox-group">
+                <input class="checkbox" type="checkbox" th:field="*{emailLoginSave}">
+                <label th:for="${#ids.prev('emailLoginSave')}">로그인 정보 저장</label>
             </div>
         </form>
     </main>
