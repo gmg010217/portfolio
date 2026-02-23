@@ -17,16 +17,18 @@
     </header>
 
     <main class="l-main">
-        <h1 class="title title-slim">이메일 로그인</h1>
+        <h1 class="title title-slim u-mb-5" th:unless="${param.reset}">이메일 로그인</h1>
+        <h1 class="title title-slim u-mb-2dot5" th:if="${param.reset}">이메일 로그인</h1>
 
-        <form class="form u-mt-5" action method="post" th:object="${emailLoginDto}">
+        <p class="u-mb-2dot5" th:if="${param.reset}" th:text="'비밀번호 재설정이 완료되었습니다.'"></p>
+        <form class="form" action method="post" th:object="${emailLoginDto}">
             <input class="input-text" type="text" placeholder="아이디" th:field="*{emailId}">
             <hr class="hr-width u-mb-5">
 
             <input class="input-text" type="password" placeholder="비밀번호" th:field="*{password}">
             <hr class="hr-width u-mb-2dot5">
 
-            <a class="u-mb-2dot5" href="/login/password/forget">비밀번호를 잊으셨나요?</a>
+            <a class="u-mb-2dot5" href="/password/email">비밀번호를 잊으셨나요?</a>
             <button class="button button-small u-mb-2dot5" type="submit">로그인</button>
             <div class="checkbox-group">
                 <input class="checkbox" type="checkbox" th:field="*{emailLoginSave}">

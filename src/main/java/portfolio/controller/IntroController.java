@@ -8,11 +8,11 @@ public class IntroController {
 
     @GetMapping("/login")
     public String login() {
-        return "start/login";
+        return "auth/login";
     }
 
     @GetMapping("/join")
     public String join() {
-        return "start/join";
+        return "join/join";
     }
 }
